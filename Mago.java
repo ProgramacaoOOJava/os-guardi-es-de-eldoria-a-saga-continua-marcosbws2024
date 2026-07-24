@@ -1,23 +1,20 @@
-package eldoria;
+//Tema2 - Desafio Novato
 
-/**
- * Classe que representa um Mago no reino de Eldoria.
- * Herda de Personagem e implementa habilidades específicas de magia.
- */
-public class Mago extends Personagem {
+public class Mago extends Personagem{
 
-    
-    // * Construtor para criar um Mago.
+    //Construtor da Classe Mago
+    public Mago(String nome, String classe, int nivel, int pontosDeVida, double poderBase) {
+        //Chamando os atributos da Super Classe.
+        super(nome, classe, nivel, pontosDeVida, poderBase);
+    }
 
-
-
-    /**
-     * Sobrescrita do método usarHabilidade() específica para Magos.
-     * Demonstra polimorfismo e vinculação dinâmica.
-     */
+    //Metodo Abstrato sendo implementado na Classe Mago
     @Override
     public void usarHabilidade() {
-
+        // TODO Auto-generated method stub
+        System.out.println("Habilidade do Mago(a): "+this.getNome());
+        System.out.println("O mago " + this.getNome() + " usa sua habilidade especial: Bola de Fogo!\n");
+        
     }
+    
 }
-
