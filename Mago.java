@@ -1,4 +1,5 @@
-//Tema2 - Desafio Novato
+//Tema 2 - Desafio Aventureiro
+
 
 public class Mago extends Personagem{
 
